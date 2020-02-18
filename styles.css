@@ -14,4 +14,47 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     display:block;
+    filter:blur(10px);
+    transition: all 1000ms;
+}
+
+.showcase:hover::after{
+
+    filter:blur(0px);
+}
+
+.showcase:hover .content{
+    filter:blur(2px);
+}
+.content{
+
+    position:absolute;
+    z-index:1;
+    width:300px;
+    height:350px;
+    top:10%;
+    text-align:center;
+    left:50%;
+    margin-top:150px;
+    margin-right: 100px;
+    margin-left: -150px;
+    transition: all 1000ms;
+}
+
+
+
+
+.content .logo {
+    height:180px;
+    width: 180px;
+}
+
+.content .title{
+    font-size:2.2rem;
+    margin-top: 1rem;
+}
+
+.content .text {
+    line-height:1.6;
+    margin-top: 1rem;
 }
