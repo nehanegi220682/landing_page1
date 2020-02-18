@@ -58,3 +58,43 @@ body{
     line-height:1.6;
     margin-top: 1rem;
 }
+
+.container{
+    padding: 4rem 2rem;
+    /* max-width:960px; */
+    overflow:hidden;
+}
+
+.grid-3{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:10px;
+
+}
+.grid-2{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:10px;
+
+}
+.center{
+    text-align: center;
+    margin:auto;
+}
+
+.bg-light{
+    background-color: #f4f4f4; /*almost white*/
+    color:#333;/*almost black*/
+}
+.bg-dark{
+    background-color: #333;
+    color:#f4f4f4;
+
+}
+footer p{
+    margin:0;
+}
+footer{
+    padding:2.2rem;
+
+}
